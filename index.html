@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div id="main">
+        <div id="oval">
+          <h1 id="title">Developer Education Survey Form</h1>
+          <p id="description">Please take a moment to complete this quick survey about your education in software development.</p>
+        </div>
+        <br>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name</label>
+          <br>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          <br><br>
+          <label id="email-label" for="email">Email</label>
+          <br>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+          <br><br>
+          <label id="number-label" for="number">Age</label>
+          <br>
+          <input id="number" type="number" name="number" min="1" max="199" placeholder="Enter your age">
+          <br><br>
+          <label for="positions">Which option best describes your current position?</label>
+          <br>
+          <select placeholder="Choose a position" id="dropdown" name="positions">
+            <option value="choose-a-position" selected disabled>Choose a position</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="it-pro">IT Professional</option>
+            <option value="software-developer">Software Developer</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+          <p>How would you describe your experience level in software development?</p>
+          <input value="novice" id="novice" type="radio" name="experience-lvl">
+          <label for="novice"> Novice</label>
+          <br>
+          <input value="intermediate" id="intermediate" type="radio" name="experience-lvl">
+          <label for="intermediate"> Intermediate</label>
+          <br>
+          <input value="advanced" id="advanced" type="radio" name="experience-lvl">
+          <label for="advanced"> Advanced</label>
+          <br>
+          <p>How did you learn software development? (Check all that apply.)</p>
+          <input id="self-taught" value="self-taught" type="checkbox">
+          <label for="self-taught"> Self-taught</label>
+          <br>
+          <input id="mentor" value="mentor" type="checkbox">
+          <label for="mentor"> Mentor</label>
+          <br>
+          <input id="high-school" value="high-school" type="checkbox">
+          <label for="high-school"> High School</label>
+          <br>
+          <input id="coding-bootcamp" value="coding-bootcamp" type="checkbox">
+          <label for="coding-bootcamp"> Coding Bootcamp</label>
+          <br>
+          <input id="undergraduate" value="undergraduate" type="checkbox">
+          <label for="undergraduate"> Undergraduate</label>
+          <br>
+          <input id="graduate" value="graduate" type="checkbox">
+          <label for="graduate"> Graduate</label>
+          <br>
+          <input id="doctorate" value="doctorate" type="checkbox">
+          <label for="doctorate"> Doctorate</label>
+          <br><br>
+          <label for="textarea">Please provide any additional information about your software development education not covered on this form.</label>
+          <br>
+          <textarea placeholder="Enter any additional information here" id="textarea"></textarea>
+          <br><br>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
+    </body>
+</html>
